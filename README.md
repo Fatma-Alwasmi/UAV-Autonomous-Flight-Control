@@ -1,4 +1,3 @@
-```markdown
 # Drone Flight Control Module 
 
 This Python module is designed to control drone flight operations. It provides a comprehensive set of functions for connecting to a drone, controlling its movement, and managing flight modes through the MAVLink protocol. This module is perfect for developers working on drone automation and control systems.
