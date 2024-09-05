@@ -74,7 +74,7 @@ You can find a complete example under the `main()` function within the module, w
 
 ### Possible Issues
 
-For the movement functions, the drone might fly less than the ditance put in the paramaters. A solution could be is to remove this block of code: 
+For the movement functions, the drone might fly less than the distance put in the paramaters. A possible solution is to remove this block of code: 
 ```python
        time.sleep(move_time)
 
