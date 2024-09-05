@@ -71,3 +71,28 @@ land_drone(connection)
 ```
 
 You can find a complete example under the `main()` function within the module, which demonstrates a sequence of operations from takeoff to landing.
+
+### Possible Issues
+
+For the movement functions, the drone might fly less than the ditance put in the paramaters. A solution could be is to remove this block of code: 
+```python
+       time.sleep(move_time)
+
+        connection.mav.set_position_target_local_ned_send(
+            0, connection.target_system,
+            connection.target_component,
+            mavutil.mavlink.MAV_FRAME_BODY_OFFSET_NED,type_mask, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 )
+```
+And then put the desired distance in the distance paramenter instead of velocity this block of code:
+
+```python
+        type_mask = int(0b0000111111000111)
+        # Command to move left
+        connection.mav.set_position_target_local_ned_send(
+            0, connection.target_system,
+            connection.target_component,
+            mavutil.mavlink.MAV_FRAME_BODY_OFFSET_NED,type_mask, 0, distance, 0, 0, 0, 0, 0, 0, 0, 0, 0 )
+```
+
+
+This method has not been tested on a drone, so be sure to have manual control incase somthing unpredictable happens. This block of code was to insure the drone doesn't fly without stopping, but it also might've beed the reason the drone wasnt flying the desired distance.
