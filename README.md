@@ -71,4 +71,3 @@ land_drone(connection)
 ```
 
 You can find a complete example under the `main()` function within the module, which demonstrates a sequence of operations from takeoff to landing.
-Author: Fatma Alwasmi
