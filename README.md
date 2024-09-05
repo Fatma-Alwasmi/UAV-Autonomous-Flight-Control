@@ -83,7 +83,7 @@ For the movement functions, the drone might fly less than the distance put in th
             connection.target_component,
             mavutil.mavlink.MAV_FRAME_BODY_OFFSET_NED,type_mask, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 )
 ```
-And then put the desired distance in the distance paramenter instead of velocity this block of code:
+And then put the desired distance in the distance paramenter instead of velocity in this block of code:
 
 ```python
         type_mask = int(0b0000111111000111)
