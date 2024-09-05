@@ -95,4 +95,4 @@ And then put the desired distance in the distance paramenter instead of velocity
 ```
 
 
-This method has not been tested on a drone, so be sure to have manual control incase somthing unpredictable happens. This block of code was to insure the drone doesn't fly without stopping, but it also might've beed the reason the drone wasnt flying the desired distance.
+This method has not been tested on a drone, so be sure to have manual control incase somthing unpredictable happens. This block of code was to insure the drone doesn't fly without stopping, but it also might've been the reason the drone wasnt flying the desired distance.
