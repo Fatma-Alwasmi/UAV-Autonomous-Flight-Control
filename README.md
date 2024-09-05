@@ -69,5 +69,6 @@ Finally, safely land the drone:
 ```python
 land_drone(connection)
 ```
+Author: Fatma Alwasmi
 
 You can find a complete example under the `main()` function within the module, which demonstrates a sequence of operations from takeoff to landing.
